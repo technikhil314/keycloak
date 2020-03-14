@@ -61,6 +61,16 @@
                 </div>
             </div>
             </#if>
+            
+            <div class="form-group">
+               <div class="${properties.kcLabelWrapperClass!}">
+                   <label for="user.attributes.mobile" class="${properties.kcLabelClass!}">Mobile number</label>
+               </div>
+
+               <div class="${properties.kcInputWrapperClass!}">
+                   <input type="text" class="${properties.kcInputClass!}" id="user.attributes.mobile" name="user.attributes.mobile" value="${(register.formData['user.attributes.mobile']!'')}"/>
+               </div>
+            </div>
 
             <#if recaptchaRequired??>
             <div class="form-group">
